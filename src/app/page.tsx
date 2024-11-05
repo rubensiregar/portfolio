@@ -6,7 +6,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 
 export default function Home() {
     return (
@@ -15,7 +14,7 @@ export default function Home() {
                 <h1 className="text-9xl">Saya Ruben</h1>
                 <div className="p-12">
                     <Carousel className="w-full max-w-sm">
-                        <CarouselContent >
+                        <CarouselContent>
                             <CarouselItem className="basis-1/3">
                                 <Card />
                             </CarouselItem>
@@ -26,6 +25,7 @@ export default function Home() {
                                 <Card />
                             </CarouselItem>
                         </CarouselContent>
+                        <CarouselPrevious />
                         <CarouselNext />
                     </Carousel>
                 </div>
